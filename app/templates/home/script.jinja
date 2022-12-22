@@ -1,0 +1,28 @@
+<script>
+    $(window).scroll(function() {
+        let counted = false;
+        var oTop = $('#section-2').offset().top - window.innerHeight;
+        if (counted === false && $(window).scrollTop() > oTop) {
+            $(".count-value").each(function() {
+                let $this = $(this);
+                let countTo = $this.attr('data-count');
+                $({
+                    countNum: $this.text()
+                }).animate({
+                    countNum: countTo
+                },
+                {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function() {
+                        $this.text(Math.floor(this.countNum));
+                    },
+                    complete: function() {
+                        $this.text(this.countNum);
+                    }
+                })
+            })
+            counted = true;
+        }
+    })
+</script>

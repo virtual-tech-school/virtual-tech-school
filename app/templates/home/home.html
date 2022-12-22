@@ -24,4 +24,36 @@
     </div>
 </div>
 
+<div id="section-2">
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-12 col-md-12 col-lg-12 text-center">
+                <h1 class="text-header-small"><span class="text-gradient">JOIN</span> Us Today!</h1>
+            </div>
+        </div>
+        <div class="row py-5">
+            {% for stat in stats %}
+            <div class="col-12 col-md-6 col-lg-3 text-center px-3 py-1">
+                <div class="row stat-box p-3">
+                    <div class="col-12 col-md-12 col-lg-12 my-1">
+                        <img src="/static/images/{{stat.get('icon')}}" width="25%;" class="img-fluid" />
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-12 my-1">
+                        <h1 class="text-header-small">{{stat.get("name")}}</h1>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-12 my-1">
+                        <h1 class="text-header count-value" data-count="{{stat.get('value')}}">0</h1>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-12 my-1">
+                        <a target="_blank" href="{{stat.get('link')}}">
+                            <button class="cta-btn-light px-5">Join</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
 {% endblock %}
