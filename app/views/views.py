@@ -1,5 +1,9 @@
 from flask import Blueprint, render_template
 
+from app.utils.counter_functions import *
+
+import os
+
 views = Blueprint('views', __name__, url_prefix="/")
 
 @views.route("/")
@@ -8,26 +12,26 @@ def home():
         {
             "name": "YouTube",
             "icon": "youtube.svg",
-            "link": "https://www.youtube.com/c/ApoorvGoyalMain",
-            "value": 4950
+            "link": os.environ.get("YOUTUBE_LINK"),
+            "value": get_youtube_stat()
         },
         {
             "name": "Discord",
             "icon": "discord.svg",
-            "link": "https://discord.com/invite/EYB8tQxjxH",
-            "value": 1500
+            "link": os.environ.get("DISCORD_LINK"),
+            "value": get_discord_stat()
         },
         {
             "name": "Twitter",
             "icon": "twitter.svg",
-            "link": "https://twitter.com/virtechschool",
-            "value": 250
+            "link": os.environ.get("TWITTER_LINK"),
+            "value": get_twitter_stat()
         },
         {
             "name": "Hashnode",
             "icon": "hashnode.svg",
-            "link": "https://virtualtechschool.hashnode.dev/",
-            "value": 70
+            "link": os.environ.get("HASHNODE_LINK"),
+            "value": get_hashnode_stat()
         }
     ]
     return render_template(

@@ -30,8 +30,24 @@ Once the virtual environment is created, source it with -
 ```
 export FLASK_DEBUG=true
 export SERVICE_URL=http://localhost:5000
+
+export CHANNEL_ID={YouTube Channel ID}
+export YT_API_KEY={Your Google API Key}
+export YOUTUBE_LINK={YouTube Channel Link}
+
+export DISCORD_SERVER_ID={Discord Server ID}
+export DISCORD_LINK={Discord Server's Invite Link}
+
+export TWITTER_TOKEN={Your Twitter Bearer Token}
+export TWT_USERNAME={Twitter Handle Username}
+export TWITTER_LINK={Twitter Profile Link}
+
+export HASHNODE_PROFILE={Hashnode Profile Page}
+export HASHNODE_LINK={Hashnode Blog Link}
 ```
 Source the above file with - `source dev.env`
+
+**Note -** If you do not wish to generate the API Keys and Tokens, edit the `app/views/views.py` and replace `get_*_stat()` function with hardcoded numbers. 
 
 **For Windows -** Create a file called `dev.bat` and add the same contents as above in the file. Source it with - `dev.bat`
 

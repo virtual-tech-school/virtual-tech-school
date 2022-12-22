@@ -9,7 +9,7 @@
                 $({
                     countNum: $this.text()
                 }).animate({
-                    countNum: countTo
+                    countNum: Math.floor(countTo / 10) * 10
                 },
                 {
                     duration: 2000,
