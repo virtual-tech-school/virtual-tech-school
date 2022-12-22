@@ -1,0 +1,27 @@
+{% extends "main.jinja" %}
+{% block main %}
+
+{% include("home/script.jinja") %}
+{% include("home/style.jinja") %}
+
+<div id="section-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-12 text-center">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <h1 class="text-header"><span class="text-gradient">FREE</span> Education For All</h1>
+                        <p class="text-paragraph mt-5">Our community focusses on <span class="text-highlight">high-level, in-depth education for everyone.</span> We are currently having a <span class="text-highlight">Web Development Boot-Camp</span> that fucusses on making you a <span class="text-highlight">T-Shaped & Job Ready Developer from Day 1.</span></p>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 mt-5 mt-md-5 mt-lg-0">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=onBooVTVwyw&list=PL2kSRH_DmWVZzZSN87g1dSDz0FUnp9PMh&index=1">
+                            <img src="/static/images/t-shaped.svg" alt="What is a T-Shaped Developer?" width="100%;" class="img-fluid" />
+                        </a>              
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
