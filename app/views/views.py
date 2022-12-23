@@ -44,3 +44,15 @@ def about_us():
     return render_template(
         "about/about.html"
     )
+
+@views.route("/bootcamp")
+def bootcamp():
+    return render_template(
+        "bootcamp/bootcamp.html"
+    )
+
+@views.route("/roadmaps")
+def roadmaps():
+    return render_template(
+        "roadmaps/roadmaps.html"
+    )
