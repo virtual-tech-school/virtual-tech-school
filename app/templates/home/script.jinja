@@ -1,4 +1,11 @@
 <script>
+    $(document).ready(function() {
+        $(".nav-link").each(function() {
+            $(this).removeClass("active");
+        });
+        $("#home-nav").addClass("active");
+    })
+
     $(window).scroll(function() {
         let counted = false;
         var oTop = $('#section-2').offset().top - window.innerHeight;

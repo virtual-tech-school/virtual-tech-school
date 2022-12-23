@@ -38,3 +38,9 @@ def home():
         "home/home.html",
         stats=stats_list
     )
+
+@views.route("/about-us")
+def about_us():
+    return render_template(
+        "about/about.html"
+    )
