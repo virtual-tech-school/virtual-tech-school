@@ -30,6 +30,10 @@
                 font-family: 'Roboto', sans-serif;
             }
 
+            a {
+                text-decoration: none;
+            }
+
             nav {
                 background-color: #101727;
             }
@@ -53,6 +57,84 @@
             
             .fa-bars {
                 color: white;
+            }
+
+            footer {
+                background-color: #101727;
+            }
+
+            .text-header {
+                font-size: 5rem;
+                font-weight: bold;
+            }
+
+            .text-header-small {
+                font-size: 3rem;
+                font-weight: bold;
+            }
+
+            .text-paragraph {
+                font-size: 1.2rem;
+                color: #6c739c;
+            }
+
+            .text-highlight {
+                color: white;
+            }
+
+            .text-gradient {
+                background: -webkit-linear-gradient(left, #1e6c97, #43c3d8);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .text-inline {
+                display: inline
+            }
+
+            .text-neon {
+                color: #48d6b5;
+                font-family: 'Teko', sans-serif;
+            }
+
+            .align-center {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .cta-btn-light {
+                background: #48d6b5;
+                border: none;
+                border-radius: 5px;
+                font-size: 1.75rem;
+                font-weight: bold;
+                color: #101727;
+            }
+
+            .ic-neon {
+                color: #48d6b5;
+                font-size: 2.5rem;
+            }
+
+            .social-box {
+                border-top: 2px solid #48d6b5;
+                border-bottom: 2px solid #48d6b5;
+            }
+
+            @media (max-width: 1024px) {
+                
+            }
+
+            @media (max-width: 480px) {
+                .text-header {
+                    font-size: 3rem;
+                }
+
+                .text-header-small {
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
             }
         </style>
 
@@ -83,7 +165,42 @@
         <footer>
             <div class="container py-5">
                 <div class="row">
-                    
+                    <div class="col-12 col-md-12 col-lg-12">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-6 text-center text-md-start text-lg-start align-center">
+                                <img src="/static/images/logo-dark.svg" width="100%;" class="img-fluid" />
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6 text-center text-md-end text-lg-end my-5 my-md-0 my-lg-0">
+                                <h1 class="text-header-small text-neon">Projects</h1>
+                                <h1 class="text-header-small text-neon">Mentorship</h1>
+                                <h1 class="text-header-small text-neon">Web Development</h1>
+                            </div>
+                        </div>
+                        <div class="row social-box mt-5 py-3">
+                            <div class="col-12 col-md-6 col-lg-6 text-center text-md-start text-lg-start">
+                                <button class="cta-btn-light px-5 py-2">Bootcamp <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6 text-center text-md-end text-lg-end mt-3 mt-md-0 mt-lg-0 align-center justify-content-center justify-content-md-end justify-content-lg-end">
+                                <a target="_blank" href="https://www.youtube.com/c/ApoorvGoyalMain">
+                                    <i class="fa-brands fa-youtube ic-neon"></i>
+                                </a>
+                                <a target="_blank" href="https://discord.gg/EYB8tQxjxH">
+                                    <i class="fa-brands fa-discord ic-neon"></i>
+                                </a>
+                                <a target="_blank" href="https://twitter.com/virtechschool">
+                                    <i class="fa-brands fa-twitter ic-neon"></i>
+                                </a>
+                                <a target="_blank" href="https://github.com/virtual-tech-school">
+                                    <i class="fa-brands fa-github ic-neon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row mb-5 py-1">
+                            <div class="col-12 col-md-12 col-lg-12 text-center">
+                                <p class="text-neon">© 2022 Copyrights by VirtualTechSchool All Rights Reserved.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>
