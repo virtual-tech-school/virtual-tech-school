@@ -4,6 +4,11 @@
 {% include("bootcamp/script.jinja") %}
 {% include("bootcamp/style.jinja") %}
 
+{% set phase_1 = ["HTML", "CSS", "Bootstrap", "Flex", "Tailwaind", "Basic JavaScript", "jQuery", "Visual Effects in Websites", "Git Masterclass", "Linux Masterclass"] %}
+{% set phase_2 = ["Asynchronous JS", "Firebase", "Cloud Functions", "APIs", "CRUD", "OOP in JS", "Full Stack Web Dev", "Events and Listeners"] %}
+{% set phase_3 = ["Python", "OOP in Python", "Synchronous Behaviour", "Threads & Processes", "Scripting", "Virtual Environment", "PostgreSQL", "Flask", "AWS Masterclass", "Nginx"] %}
+{% set phase_4 = ["Advanced JS", "ReactJS", "Testing your Applications", "Docker Masterclass", "Bash Scripting", "CI/CD", "Development Environments", "Environment Variables", "Scrum Mastery"] %}
+
 <div id="section-1">
     <div class="container py-5">
         <div class="row">
@@ -102,7 +107,7 @@
         </div>
         <div class="row">
             <div class="col-12 col-md-6 col-lg-6 text-center text-md-end text-lg-end my-1">
-                <a href="/bootcamp">
+                <a href="#section-2">
                     <button class="cta-btn-light px-5 py-2 width-sm-100">Breakdown <i class="fa-solid fa-arrow-right"></i></button>
                 </a>
             </div>
@@ -110,6 +115,161 @@
                 <a href="/bootcamp">
                     <button class="cta-btn-light px-5 py-2 width-sm-100">Courses <i class="fa-solid fa-arrow-right"></i></button>
                 </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="section-2">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-12 text-center">
+                <h1 class="text-header-small">
+                    Polyphasic Course
+                    <hr class="underline underline-dark"/>
+                </h1>
+            </div>
+            <div class="col-12 col-md-12 col-lg-12 text-center my-4">
+                <p class="text-paragraph text-black">We have designed this course in <b>4 Phases to ensure we enable the students to achieve their financial goals and make the maximum out of the bootcamp</b> without getting confused. Each of the phase contains some technologies, and an architecture overview <b>that every full-stack T-shaped developer must know</b> in order to have an amazing career.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="section-3">
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-12 col-md-12 col-lg-6 text-center text-md-center text-lg-start">
+                <h1 class="text-header-small">
+                    Phase 1
+                </h1>
+                <h1 class="text-header">
+                    Static Websites
+                    <hr class="underline underline-light m-start"/>
+                </h1>
+                <p class="text-paragraph my-5">
+                    Your first steps to coding! In this phase, you'd be <span class="text-highlight">learning the basics of front-end web development languages.</span> You will also be <span class="text-highlight">learning Git</span>, which goes a long way for developers and is the <span class="text-highlight">most widely used tool in software development and open source.</span> You would also learn and <span class="text-highlight">get comfortable with Linux and its bash shell,</span> that helps you get out of your comfort zone and <span class="text-highlight">establishes great foundation for a career in DevOps</span> or for becoming an awesome software developer. 
+                </p>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6 align-center text-start text-md-start text-lg-end">
+                <div class="row">
+                    {% for tech in phase_1 %}
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <div class="row my-2">
+                            <div class="col-2 col-md-2 col-lg-2 text-end">
+                                <i class="fa fa-check ic-phase" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10 col-md-10 col-lg-10 text-start">
+                                <p class="paragraph-text display-inline">{{tech}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="section-4">
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-12 col-md-12 col-lg-6 text-center text-md-center text-lg-end order-1 order-md-1 order-lg-2">
+                <h1 class="text-header-small">
+                    Phase 2
+                </h1>
+                <h1 class="text-header">
+                    Serverless Architecture
+                    <hr class="underline underline-dark m-end"/>
+                </h1>
+                <p class="text-paragraph text-black my-5">
+                    As you learn front-end, you'd realise that there are a lot of <b>things that needs to happen behind the scenes.</b> Saving user's data, fetching it from a database, letting them update it, and a lot more. In this phase, you'd be <b>learning about Firebase and similar NoSQL databases,</b> and create cloud functions that let you <b>achieve back-end functionality</b> without actually serving it on your own. You would also learn about events and listeners.
+                </p>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6 align-center text-start text-md-start text-lg-end order-2 order-md-2 order-lg-1">
+                <div class="row">
+                    {% for tech in phase_2 %}
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <div class="row my-2">
+                            <div class="col-2 col-md-2 col-lg-2 text-end">
+                                <i class="fa fa-check ic-phase" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10 col-md-10 col-lg-10 text-start">
+                                <p class="paragraph-text display-inline">{{tech}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="section-5">
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-12 col-md-12 col-lg-6 text-center text-md-center text-lg-start">
+                <h1 class="text-header-small">
+                    Phase 3
+                </h1>
+                <h1 class="text-header">
+                    Monolithic Architecture
+                    <hr class="underline underline-light m-start"/>
+                </h1>
+                <p class="text-paragraph my-5">
+                    This phase is all about <span class="text-highlight">Python, a powerful and one of the most widely used languages in data science/machine learning, web development, scripting, DevOps, etc.</span> You will also learn about <span class="text-highlight">PostgreSQL database,</span> one of the most widely used SQL databases, along with <span class="text-highlight">Python's microframework Flask for Web Development.</span> You would also <span class="text-highlight">deploy your first application on your own, after learning AWS!</span>
+                </p>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6 align-center text-start text-md-start text-lg-end">
+                <div class="row">
+                    {% for tech in phase_3 %}
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <div class="row my-2">
+                            <div class="col-2 col-md-2 col-lg-2 text-end">
+                                <i class="fa fa-check ic-phase" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10 col-md-10 col-lg-10 text-start">
+                                <p class="paragraph-text display-inline">{{tech}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="section-6">
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-12 col-md-12 col-lg-6 text-center text-md-center text-lg-end order-1 order-md-1 order-lg-2">
+                <h1 class="text-header-small">
+                    Phase 4
+                </h1>
+                <h1 class="text-header">
+                    Microservice Architecture
+                    <hr class="underline underline-dark m-end"/>
+                </h1>
+                <p class="text-paragraph text-black my-5">
+                    By this point, <b>you'd already be good enough to build most of the platforms</b> you encounter and would <b>have built strong foundation for your development skills.</b> It's time to go next level, by learning and mastering <b>ReactJS, a powerful JS framework</b> which is most in-demand. You'd also be learning about <b>Docker and some DevOps techniques for microservice framework</b>, and would also learn about the art of <b>test driven development.</b>
+                </p>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6 align-center text-start text-md-start text-lg-end order-2 order-md-2 order-lg-1">
+                <div class="row">
+                    {% for tech in phase_4 %}
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <div class="row my-2">
+                            <div class="col-2 col-md-2 col-lg-2 text-end">
+                                <i class="fa fa-check ic-phase" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10 col-md-10 col-lg-10 text-start">
+                                <p class="paragraph-text display-inline">{{tech}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>
