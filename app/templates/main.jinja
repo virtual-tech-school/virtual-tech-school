@@ -120,6 +120,28 @@
                 font-family: 'Teko', sans-serif;
             }
 
+            .flicker {
+                color: #fff;
+                animation: flicker 1.5s infinite alternate;
+            }
+
+            @keyframes flicker {
+                0%, 18%, 22%, 25%, 53%, 57%, 100% {
+                    text-shadow:
+                        0 0 0.5px #fff,
+                        0 0 1.5px #fff,
+                        0 0 2.5px #fff,
+                        0 0 5px #48d6b5,
+                        0 0 10px #48d6b5,
+                        0 0 11px #48d6b5,
+                        0 0 12.5px #48d6b5,
+                        0 0 19px #48d6b5;
+                }
+                20%, 24%, 55% {        
+                    text-shadow: none;
+                }    
+            }
+
             .align-center {
                 display: flex;
                 justify-content: center;
@@ -197,6 +219,9 @@
                 .m-start, .m-end {
                     margin-left: auto;
                     margin-right: auto;
+                }
+                .width-sm-100 {
+                    width: 100%;
                 }
             }
         </style>
