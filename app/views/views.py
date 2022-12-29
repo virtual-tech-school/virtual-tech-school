@@ -12,25 +12,25 @@ def home():
         {
             "name": "YouTube",
             "icon": "youtube.svg",
-            "link": os.environ.get("YOUTUBE_LINK"),
+            "link": "https://www.youtube.com/c/ApoorvGoyalMain",
             "value": get_youtube_stat()
         },
         {
             "name": "Discord",
             "icon": "discord.svg",
-            "link": os.environ.get("DISCORD_LINK"),
+            "link": "https://discord.gg/EYB8tQxjxH",
             "value": get_discord_stat()
         },
         {
             "name": "Twitter",
             "icon": "twitter.svg",
-            "link": os.environ.get("TWITTER_LINK"),
+            "link": "https://twitter.com/virtechschool",
             "value": get_twitter_stat()
         },
         {
             "name": "Hashnode",
             "icon": "hashnode.svg",
-            "link": os.environ.get("HASHNODE_LINK"),
+            "link": "https://github.com/virtual-tech-school",
             "value": get_hashnode_stat()
         }
     ]
