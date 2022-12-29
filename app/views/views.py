@@ -51,8 +51,8 @@ def bootcamp():
         "bootcamp/bootcamp.html"
     )
 
-@views.route("/roadmaps")
-def roadmaps():
+@views.route("/courses")
+def courses():
     return render_template(
-        "roadmaps/roadmaps.html"
+        "courses/courses.html"
     )
