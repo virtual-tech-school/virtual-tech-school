@@ -6,15 +6,53 @@
 
 <div id="section-1">
     <div class="container py-5">
-        <div class="row pt-5">
+        <div class="row pt-5 px-2">
             <div class="col-12 col-md-12 col-lg-12 text-center">
                 <h1 class="text-header-small">
                     Courses
                     <hr class="underline underline-dark"/>
                 </h1>
-                <h1 class="text-header-small py-5">
-                    Under Construction
-                </h1>
+            </div>
+            <div class="col-12 col-md-12 col-lg-12 text-center">
+                <div class="row">
+                    {% for code, json in courses.items() %}
+                    <div class="col-12 col-md-6 col-lg-4 text-center my-5">
+                        <div class="courses-container h-100">
+                            <div class="row">
+                                <div class="col-12 col-md-12 col-lg-12 text-center">
+                                    <img src="/static/images/courses/{{code}}.png" class="img-fluid course-img" />
+                                </div>
+                                <div class="col-12 col-md-12 col-lg-12 text-center my-3">
+                                    <h1 class="text-header-small mx-2">
+                                        {{json.name}}
+                                    </h1>
+                                </div>
+                                <div class="col-12 col-md-12 col-lg-12 text-start mb-3">
+                                    <p class="text-paragraph text-black mx-2">
+                                        {{json.description}}
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-12 col-lg-12 text-center mb-3 d-flex align-items-end">
+                                    <div class="row mx-auto">
+                                        {% if json.get("link") %}
+                                        <div class="col-12 col-md-12 col-lg-12 my-1">
+                                            <a href="{{json.link}}" target="_blank">
+                                                <button class="cta-btn-light px-5 py-2">Playlist</button>
+                                            </a>
+                                        </div>
+                                        {% endif %}
+                                        <div class="col-12 col-md-12 col-lg-12 my-1">
+                                            <a href="/courses/{{code}}">
+                                                <button class="cta-btn-light px-5 py-2">Explore</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>

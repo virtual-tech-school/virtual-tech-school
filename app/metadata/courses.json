@@ -1,0 +1,20 @@
+{
+    "linux101": {
+        "name": "Linux Masterclass",
+        "link": "https://www.youtube.com/watch?v=nRpmRDm-QrQ&list=PL2kSRH_DmWVZp_cu6MMPWkgYh7GZVFS6i",
+        "description": "This beginner friendly playlist helps you step out of your comfort zone and get started with Linux. It covers a wide range of topics and commands used in Linux, and we dive deep into understanding how Linux actually works."
+    },
+    "git101": {
+        "name": "Git & Github",
+        "link": "https://www.youtube.com/watch?v=LQ2LTPHeTts&list=PL2kSRH_DmWVajYgFoP-HVKK5VKkzFYyzp",
+        "description": "Git is the most widely used tool in software development and in this course, you'd be learning about Git, how it works internally and its commands that will help you maintain the versions for your software and contribute in Open Source."
+    },
+    "frontend101": {
+        "name": "Frontend Basics",
+        "description": "This is your first step towards full-stack web development, where you'd be learning about the building blocks of any website - HTML, CSS, JavaScript and a few famous libraries. Get ready to build a lot of projects!"
+    },
+    "python101": {
+        "name": "Python Fundamentals",
+        "description": "Get ready to learn lots of scripts, automation tools and bots by learning the most widely used language - Python. In this series, you'd be getting comfortable with your first 'Turing Complete' programming language, and have fun while you're at it."
+    }
+}

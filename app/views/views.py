@@ -2,6 +2,7 @@ from flask import Blueprint, render_template
 
 from app.utils.counter_functions import *
 
+import json
 import os
 
 views = Blueprint('views', __name__, url_prefix="/")
@@ -53,6 +54,14 @@ def bootcamp():
 
 @views.route("/courses")
 def courses():
+    f = open("app/metadata/courses.json")
+    courses = json.load(f)
+    f.close()
     return render_template(
-        "courses/courses.html"
+        "courses/courses.html",
+        courses=courses
     )
+
+@views.route("/courses/<code>")
+def course(code):
+    return(code)
