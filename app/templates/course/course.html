@@ -4,6 +4,64 @@
 {% include("course/script.jinja") %}
 {% include("course/style.jinja") %}
 
-course
+<div class="container">
+    <div class="row my-5 p-2">
+        <div class="col-12 col-md-12 col-lg-12 text-center">
+            <h1 class="text-header">
+                {{course.name}}
+                <hr class="underline underline-dark"/>
+            </h1>
+            <p class="text-paragraph text-black">{{course.description}}</p>
+        </div>
+        <div class="col-12 col-md-12 col-lg-12 text-center mt-5">
+            <div class="row">
+            {% for video in course.get("videos") %}
+                <div class="col-12 col-md-12 col-lg-12 text-center my-2 video-box p-2">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-6 align-center">
+                            <div class="row">
+                                <div class="col-12 col-md-12 col-lg-12 text-center">
+                                    <div class="position-relative">
+                                        <img src="/static/images/courses/{{code}}/{{video.get('order')}}.png" alt="What is a T-Shaped Developer?" width="100%;" class="img-fluid video-img" />
+                                        <a target="_blank" href="https://www.youtube.com/watch?v=onBooVTVwyw&list=PL2kSRH_DmWVZzZSN87g1dSDz0FUnp9PMh&index=1">
+                                            <div class="img-overlay video-img">
+                                                <img src="/static/images/youtube.svg" width="10%;" class="img-fluid overlay-icon" />
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-12 col-lg-12 text-center mt-3 display-tablet">
+                                    <a href="{{video.link}}" target="_blank">
+                                        <button class="cta-btn-light px-5 py-2">Notes <i class="fa-solid fa-arrow-right"></i></button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 align-center mt-3 mt-md-0 mt-lg-0 p-4 p-md-4 p-lg-4">
+                            <div class="row">
+                                <div class="col-12 col-md-12 col-lg-12 text-start">
+                                    <h1 class="text-video-name">
+                                        {{video.get("name")}}
+                                    </h1>
+                                </div>
+                                <div class="col-12 col-md-12 col-lg-12 text-start mt-3">
+                                    <p class="text-paragraph text-black">
+                                        {{video.get("description")}}
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-12 col-lg-12 text-center mt-3 hide-tablet">
+                                    <a href="{{video.link}}" target="_blank">
+                                        <button class="cta-btn-light px-5 py-2">Notes <i class="fa-solid fa-arrow-right"></i></button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %}

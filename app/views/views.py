@@ -66,7 +66,8 @@ def course(code):
         course = fetch_course_data(code)
         return render_template(
             "course/course.html",
-            course=course
+            course=course,
+            code=code
         )
     except ValueError:
         return render_template(

@@ -2,19 +2,82 @@
     "linux101": {
         "name": "Linux Masterclass",
         "link": "https://www.youtube.com/watch?v=nRpmRDm-QrQ&list=PL2kSRH_DmWVZp_cu6MMPWkgYh7GZVFS6i",
-        "description": "This beginner friendly playlist helps you step out of your comfort zone and get started with Linux. It covers a wide range of topics and commands used in Linux, and we dive deep into understanding how Linux actually works."
+        "description": "This beginner friendly playlist helps you step out of your comfort zone and get started with Linux. It covers a wide range of topics and commands used in Linux, and we dive deep into understanding how Linux actually works.",
+        "videos": [
+            {
+                "order": 0,
+                "name": "Getting Started With Linux On Windows 10/11 | 2022 - WSL2, VMWare & Booting USB",
+                "description": "New to Linux and a lifelong Windows user? No problem! This video helps you install Linux Distributions in a Virtual Machine, and explores other alternatives that can enable you to use Linux commands on your Windows Operating System.",
+                "link": "https://www.youtube.com/watch?v=nRpmRDm-QrQ&list=PL2kSRH_DmWVZp_cu6MMPWkgYh7GZVFS6i",
+                "notes": "https://github.com/virtual-tech-school/virtual-tech-notes/tree/main/linux-masterclass/01-setup"
+            },
+            {
+                "order": 1,
+                "name": "Linux Tutorial For Beginners - 1 | Bash Programming & Operating Systems | Bootcamp",
+                "description": "Understand how a computer works right from when you turn it on, and explore some basic commands of Linux and its programming language Bash in this video.",
+                "link": "https://www.youtube.com/watch?v=Juo_0lpBMPY&list=PL2kSRH_DmWVZp_cu6MMPWkgYh7GZVFS6i&index=2",
+                "notes": "https://github.com/virtual-tech-school/virtual-tech-notes/tree/main/linux-masterclass/02-introduction"
+            },
+            {
+                "order": 2,
+                "name": "Linux Tutorial For Beginners - 2 | Standard Streams and File Manipulation | Bootcamp",
+                "description": "All programs consist of 3 things - Inputs, Outputs and Errors. Linux is no different. Understand about these standard streams and manipulate some files through the command line in this video.",
+                "link": "https://www.youtube.com/watch?v=xVaC_G6aeH0&list=PL2kSRH_DmWVZp_cu6MMPWkgYh7GZVFS6i&index=3",
+                "notes": "https://github.com/virtual-tech-school/virtual-tech-notes/tree/main/linux-masterclass/03-streams-and-files"
+            },
+            {
+                "order": 3,
+                "name": "Linux System Administrators - User Management & Permissions Tutorial For Beginners",
+                "description": "Aspiring to become a system administrator some day? This video is gold for you! Learn about different users in Linux, their management and how you can distribute different permissions to people with different roles.",
+                "link": "https://www.youtube.com/watch?v=hxNFeL2qY-k&list=PL2kSRH_DmWVZp_cu6MMPWkgYh7GZVFS6i&index=4",
+                "notes": "https://github.com/virtual-tech-school/virtual-tech-notes/tree/main/linux-masterclass/04-users-and-permissions"
+            },
+            {
+                "order": 4,
+                "name": "Processes In Linux - How Linux Works Internally? Linux Masterclass Course",
+                "description": "This video is all you ever need to know about processes. After all, all programs we run on our machine is a process of some sort. Learn about the different types of processes and how they work in this video.",
+                "link": "https://www.youtube.com/watch?v=cnbvsWKf-qM&list=PL2kSRH_DmWVZp_cu6MMPWkgYh7GZVFS6i&index=5",
+                "notes": "https://github.com/virtual-tech-school/virtual-tech-notes/tree/main/linux-masterclass/05-processes"
+            },
+            {
+                "order": 5,
+                "name": "Linux Filesystem, Partitions & Inodes - A Deep Dive For Beginners",
+                "description": "Curious about partitions, memory allocation and how Linux (or any other Operating System) finds a file for you? This video clears all your doubts as we dive deep into breaking down how Linux is just a cleverly written software.",
+                "link": "https://www.youtube.com/watch?v=PbMT53jaUaU&list=PL2kSRH_DmWVZp_cu6MMPWkgYh7GZVFS6i&index=6",
+                "notes": "https://github.com/virtual-tech-school/virtual-tech-notes/tree/main/linux-masterclass/06-partitions"
+            },
+            {
+                "order": 6,
+                "name": "Kernel, System Calls & Init Implementations For Beginners | Linux Masterclass Course",
+                "description": "Ever wondered who's the real boss in Linux Operating Systems? Ever wondered how it is so efficient in running things internally while you sit back and just click your mouse and type some commands? This video is for you!",
+                "link": "https://www.youtube.com/watch?v=08SwnaMhL1k&list=PL2kSRH_DmWVZp_cu6MMPWkgYh7GZVFS6i&index=7",
+                "notes": "https://github.com/virtual-tech-school/virtual-tech-notes/tree/main/linux-masterclass/07-kernel"
+            },
+            {
+                "order": 7,
+                "name": "Multiple Threads of Execution & Process Utilization - Linux Course For Beginners",
+                "description": "Linux and any other Operating System is capable of doing great things - Some of which are running multiple Google Chrome tabs for you at once, while you're listening to music on Spotify and working on your favourite text editor while coding. This video tells you how it manages that.",
+                "link": "https://www.youtube.com/watch?v=m52OeR-mfYo&list=PL2kSRH_DmWVZp_cu6MMPWkgYh7GZVFS6i&index=8",
+                "notes": "https://github.com/virtual-tech-school/virtual-tech-notes/tree/main/linux-masterclass/08-resource-utilization"
+            }
+        ]
     },
     "git101": {
         "name": "Git & Github",
         "link": "https://www.youtube.com/watch?v=LQ2LTPHeTts&list=PL2kSRH_DmWVajYgFoP-HVKK5VKkzFYyzp",
-        "description": "Git is the most widely used tool in software development and in this course, you'd be learning about Git, how it works internally and its commands that will help you maintain the versions for your software and contribute in Open Source."
+        "description": "Git is the most widely used tool in software development and in this course, you'd be learning about Git, how it works internally and its commands that will help you maintain the versions for your software and contribute in Open Source.",
+        "videos": [
+            
+        ]
     },
     "frontend101": {
         "name": "Frontend Basics",
-        "description": "This is your first step towards full-stack web development, where you'd be learning about the building blocks of any website - HTML, CSS, JavaScript and a few famous libraries. Get ready to build a lot of projects!"
+        "description": "This is your first step towards full-stack web development, where you'd be learning about the building blocks of any website - HTML, CSS, JavaScript and a few famous libraries. Get ready to build a lot of projects!",
+        "videos": []
     },
     "python101": {
         "name": "Python Fundamentals",
-        "description": "Get ready to learn lots of scripts, automation tools and bots by learning the most widely used language - Python. In this series, you'd be getting comfortable with your first 'Turing Complete' programming language, and have fun while you're at it."
+        "description": "Get ready to learn lots of scripts, automation tools and bots by learning the most widely used language - Python. In this series, you'd be getting comfortable with your first 'Turing Complete' programming language, and have fun while you're at it.",
+        "videos": []
     }
 }
