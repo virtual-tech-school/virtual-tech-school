@@ -1,0 +1,28 @@
+{% extends "main.jinja" %}
+{% block main %}
+
+{% include("404/script.jinja") %}
+
+<div class="container">
+    <div class="row my-5">
+        <div class="col-12 col-md-12 col-lg-12 text-center">
+            <img src="/static/images/404.png" width="50%" class="img-fluid" />
+        </div>
+        <div class="col-12 col-md-12 col-lg-12 text-center mt-5">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-6 text-center text-md-end text-lg-end">
+                    <a href="{{url_for('views.home')}}" target="_blank">
+                        <button class="cta-btn-light px-5 py-2 width-sm-100 my-1">Home</button>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 text-center text-md-start text-lg-start">
+                    <a href="{{url_for('views.courses')}}" target="_blank">
+                        <button class="cta-btn-light px-5 py-2 width-sm-100 my-1">Courses</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
