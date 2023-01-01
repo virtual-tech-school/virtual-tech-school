@@ -14,6 +14,7 @@
             <p class="text-paragraph text-black">{{course.description}}</p>
         </div>
         <div class="col-12 col-md-12 col-lg-12 text-center mt-5">
+            {% if course.get("videos") | length > 0 %}
             <div class="row">
             {% for video in course.get("videos") %}
                 <div class="col-12 col-md-12 col-lg-12 text-center my-2 video-box p-2">
@@ -22,7 +23,7 @@
                             <div class="row">
                                 <div class="col-12 col-md-12 col-lg-12 text-center">
                                     <div class="position-relative">
-                                        <img src="/static/images/courses/{{code}}/{{video.get('order')}}.png" alt="What is a T-Shaped Developer?" width="100%;" class="img-fluid video-img" />
+                                        <img src="/static/images/courses/{{code}}/{{video.get('order')}}.png" alt="{{code}} video {{video.get('order')}}" width="100%;" class="img-fluid video-img" />
                                         <a target="_blank" href="https://www.youtube.com/watch?v=onBooVTVwyw&list=PL2kSRH_DmWVZzZSN87g1dSDz0FUnp9PMh&index=1">
                                             <div class="img-overlay video-img">
                                                 <img src="/static/images/youtube.svg" width="10%;" class="img-fluid overlay-icon" />
@@ -60,6 +61,11 @@
                 </div>
             {% endfor %}
             </div>
+            {% else %}
+            <h1 class="text-header-small my-5">
+                Coming Soon!
+            </h1>
+            {% endif %}
         </div>
     </div>
 </div>
