@@ -25,7 +25,7 @@
         </div>
         <div class="row py-5">
             <div class="col-12 col-md-6 col-lg-3 text-center my-2">
-                <div class="p-3 feature-box">
+                <div class="p-3 feature-box h-100 d-flex">
                     <div class="row">
                         <div class="col-12 col-md-12 col-lg-12">
                             <h1 class="text-header-small text-neon">
@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3 text-center my-2">
-                <div class="p-3 feature-box">
+                <div class="p-3 feature-box h-100 d-flex">
                     <div class="row">
                         <div class="col-12 col-md-12 col-lg-12">
                             <h1 class="text-header-small text-neon">
@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3 text-center my-2">
-                <div class="p-3 feature-box">
+                <div class="p-3 feature-box h-100 d-flex">
                     <div class="row">
                         <div class="col-12 col-md-12 col-lg-12">
                             <h1 class="text-header-small text-neon">
@@ -85,7 +85,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3 text-center my-2">
-                <div class="p-3 feature-box">
+                <div class="p-3 feature-box h-100 d-flex">
                     <div class="row">
                         <div class="col-12 col-md-12 col-lg-12">
                             <h1 class="text-header-small text-neon">
@@ -112,7 +112,7 @@
                 </a>
             </div>
             <div class="col-12 col-md-6 col-lg-6 text-center text-md-start text-lg-start my-1">
-                <a href="/bootcamp">
+                <a href="{{url_for('views.courses')}}">
                     <button class="cta-btn-light px-5 py-2 width-sm-100">Courses <i class="fa-solid fa-arrow-right"></i></button>
                 </a>
             </div>
@@ -130,6 +130,16 @@
             </div>
             <div class="col-12 col-md-12 col-lg-12 text-center my-4">
                 <p class="text-paragraph text-black">We have designed this course in <b>4 Phases to ensure we enable the students to achieve their financial goals and make the maximum out of the bootcamp</b> without getting confused. Each of the phase contains some technologies, and an architecture overview <b>that every full-stack T-shaped developer must know</b> in order to have an amazing career.</p>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6 offset-lg-3 text-center my-4">
+                <div class="position-relative">
+                    <img src="/static/images/roadmap.png" alt="Web Development Roadmap" width="100%;" class="img-fluid" />
+                    <a target="_blank" href="https://www.youtube.com/watch?v=bJUpa1AJ2Gs&list=PL2kSRH_DmWVZzZSN87g1dSDz0FUnp9PMh&index=2">
+                        <div class="img-overlay">
+                            <img src="/static/images/youtube.svg" width="10%;" class="img-fluid overlay-icon" />
+                        </div>
+                    </a>
+                </div>  
             </div>
         </div>
     </div>

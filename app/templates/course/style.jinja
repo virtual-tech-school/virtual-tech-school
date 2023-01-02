@@ -1,0 +1,56 @@
+<style>
+    .text-video-name {
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+
+    .display-tablet {
+        display: none;
+    }
+
+    .video-box {
+        border: 1px solid #636363;
+        border-radius: 1rem;
+    }
+
+    .video-img {
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        border-top-right-radius: 0rem;
+        border-bottom-right-radius: 0rem;
+    }
+
+    @media (max-width: 1024px) {
+        .hide-tablet {
+            display: none;
+        }
+
+        .display-tablet {
+            display: block;
+        }
+
+        .video-img {
+            border-top-left-radius: 0rem;
+            border-bottom-left-radius: 0rem;
+            border-top-right-radius: 0rem;
+            border-bottom-right-radius: 0rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .hide-tablet {
+            display: block;
+        }
+
+        .display-tablet {
+            display: none;
+        }
+
+        .video-img {
+            border-top-left-radius: 1rem;
+            border-bottom-left-radius: 0rem;
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 0rem;
+        }
+    }
+</style>

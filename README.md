@@ -19,7 +19,7 @@ We have used **Python3.11.x** for this application. You can check the version of
 ### 2. Sourcing the Virtual Environment
 Once the virtual environment is created, source it with -
 
-`source venv/bin/active`
+`source venv/bin/activate`
 
 **Note** - The above command will work in Linux and MacOS, but for windows, try the below command -
 

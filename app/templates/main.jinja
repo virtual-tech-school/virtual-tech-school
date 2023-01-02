@@ -1,5 +1,15 @@
 <html>
     <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ET2JXKDEYC"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-ET2JXKDEYC');
+        </script>
+
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -207,6 +217,24 @@
                 font-size: 1.5rem;
             }
 
+            .img-clickable {
+                position: relative;
+            }
+
+            .img-overlay {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, .5);
+            }
+
+            .overlay-icon {
+                position: absolute;
+                top: 45%;
+                left: 45%;
+            }
+
             @media (max-width: 1024px) {
                 .m-start, .m-end {
                     margin-left: auto;
@@ -249,16 +277,16 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item px-4 px-md-4 px-lg-2">
-                        <a class="nav-link active" href="/" id="home-nav">Home</a>
+                        <a class="nav-link active" href="{{url_for('views.home')}}" id="home-nav">Home</a>
                     </li>
                     <li class="nav-item px-4 px-md-4 px-lg-2">
-                        <a class="nav-link" href="/about-us" id="about-nav">About Us</a>
+                        <a class="nav-link" href="{{url_for('views.about_us')}}" id="about-nav">About Us</a>
                     </li>
                     <li class="nav-item px-4 px-md-4 px-lg-2">
-                        <a class="nav-link" href="/bootcamp" id="bootcamp-nav">Bootcamp</a>
+                        <a class="nav-link" href="{{url_for('views.bootcamp')}}" id="bootcamp-nav">Bootcamp</a>
                     </li>
                     <li class="nav-item px-4 px-md-4 px-lg-2">
-                        <a class="nav-link" href="/roadmaps" id="roadmap-nav">Roadmaps</a>
+                        <a class="nav-link" href="{{url_for('views.courses')}}" id="courses-nav">Courses</a>
                     </li>
                     <li class="nav-item px-4 px-md-4 px-lg-2">
                         <a class="nav-link" target="_blank" href="https://github.com/virtual-tech-school/virtual-tech-school">Contribute</a>
@@ -285,7 +313,7 @@
                         </div>
                         <div class="row social-box mt-5 py-3">
                             <div class="col-12 col-md-6 col-lg-6 text-center text-md-start text-lg-start">
-                                <a href="/bootcamp">
+                                <a href="{{url_for('views.bootcamp')}}">
                                     <button class="cta-btn-light px-5 py-2">Bootcamp <i class="fa-solid fa-arrow-right"></i></button>
                                 </a>
                             </div>
