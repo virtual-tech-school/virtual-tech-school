@@ -100,6 +100,7 @@
     "frontend101": {
         "name": "Frontend Basics",
         "description": "This is your first step towards full-stack web development, where you'd be learning about the building blocks of any website - HTML, CSS, JavaScript and a few famous libraries. Get ready to build a lot of projects!",
+        "link" : "https://www.youtube.com/playlist?list=PL2kSRH_DmWVbKFpYn3drI8Qf66ZpvZ_3L",
         "videos": []
     },
     "python101": {
