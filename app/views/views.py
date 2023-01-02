@@ -31,7 +31,7 @@ def home():
         {
             "name": "Hashnode",
             "icon": "hashnode.svg",
-            "link": "https://github.com/virtual-tech-school",
+            "link": "https://virtualtechschool.hashnode.dev/",
             "value": get_hashnode_stat()
         }
     ]
