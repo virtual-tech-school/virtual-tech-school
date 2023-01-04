@@ -101,7 +101,21 @@
         "name": "Frontend Basics",
         "description": "This is your first step towards full-stack web development, where you'd be learning about the building blocks of any website - HTML, CSS, JavaScript and a few famous libraries. Get ready to build a lot of projects!",
         "link" : "https://www.youtube.com/playlist?list=PL2kSRH_DmWVbKFpYn3drI8Qf66ZpvZ_3L",
-        "videos": []
+        "videos": [
+            {
+                "order": 0,
+                "name": "Basic Front-End Course For Beginners 2023 - Introduction | Phase 1",
+                "description": "This is an introductory video for the playlist, where we will be understanding what you'd learn, how you can maximize your learning and what will we achieve after learning from this course.",
+                "link": "https://www.youtube.com/watch?v=-wx4z8SC7aA&list=PL2kSRH_DmWVbKFpYn3drI8Qf66ZpvZ_3L&index=1"
+            },
+            {
+                "order": 1,
+                "name": "HTML5 Crash Course For Beginners 2023 | Tutorial Part 1",
+                "description": "A crash course on HTML if you're an absolute beginner. In this video, we explore the fundamentals of HTML and also talk a little bit about CSS. This lays out a foundation for you to build great stuff later on.",
+                "link": "https://www.youtube.com/watch?v=JLKy8apeLac&list=PL2kSRH_DmWVbKFpYn3drI8Qf66ZpvZ_3L&index=2",
+                "notes": "https://github.com/virtual-tech-school/virtual-tech-notes/tree/main/frontend-101/01-html-basics"
+            }
+        ]
     },
     "python101": {
         "name": "Python Fundamentals",

@@ -31,11 +31,13 @@
                                         </a>
                                     </div>
                                 </div>
+                                {% if video.get('notes') %}
                                 <div class="col-12 col-md-12 col-lg-12 text-center mt-3 display-tablet">
                                     <a href="{{video.notes}}" target="_blank">
                                         <button class="cta-btn-light px-5 py-2">Notes <i class="fa-solid fa-arrow-right"></i></button>
                                     </a>
                                 </div>
+                                {% endif %}
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-6 align-center mt-3 mt-md-0 mt-lg-0 p-4 p-md-4 p-lg-4">
@@ -50,11 +52,13 @@
                                         {{video.get("description")}}
                                     </p>
                                 </div>
+                                {% if video.get('notes') %}
                                 <div class="col-12 col-md-12 col-lg-12 text-center mt-3 hide-tablet">
                                     <a href="{{video.notes}}" target="_blank">
                                         <button class="cta-btn-light px-5 py-2">Notes <i class="fa-solid fa-arrow-right"></i></button>
                                     </a>
                                 </div>
+                                {% endif %}
                             </div>
                         </div>
                     </div>
