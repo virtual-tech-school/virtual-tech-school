@@ -4,7 +4,7 @@ Virtual Tech School is a community aiming to help everyone get started, learn an
 This is a repository for our community's website. Following are the steps for running it locally in your system -
 
 ### 1. Creating a Virtual Environment
-After cloning the repository, navigate into the repository through command line terminal / command prompt and create a virtual environment with the following command -
+After cloning the repository, navigate into the repository through command-line terminal / command prompt and create a virtual environment with the following command -
 
 `python -m venv venv`
 
@@ -21,7 +21,7 @@ Once the virtual environment is created, source it with -
 
 `source venv/bin/activate`
 
-**Note** - The above command will work in Linux and MacOS, but for windows, try the below command -
+**Note** - The above command will work only in Linux and macOS, for windows try the following command -
 
 `venv\Scripts\activate.bat`
 
@@ -47,17 +47,17 @@ export HASHNODE_LINK={Hashnode Blog Link}
 ```
 Source the above file with - `source dev.env`
 
-**Note -** If you do not wish to generate the API Keys and Tokens, edit the `app/views/views.py` and replace `get_*_stat()` function with hardcoded numbers. 
+**Note -** If you do not wish to generate the API Keys and Tokens, you can edit the `app/views/views.py` and replace `get_*_stat()` function with hardcoded numbers. 
 
 **For Windows -** Create a file called `dev.bat` and add the same contents as above in the file. Source it with - `dev.bat`
 
 ### 4. Installing Libraries and Dependencies
-For installing dependencies and libraries, run -
+For installing dependencies and libraries, run the following command -
 
 `pip install -r requirements.txt`
 
 ### 5. Starting the server
-To start the server, run -
+To start the server, run the following command -
 
 `python manage.py run`
 
