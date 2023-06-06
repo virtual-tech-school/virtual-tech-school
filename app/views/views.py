@@ -31,7 +31,7 @@ def home():
         {
             "name": "Hashnode",
             "icon": "hashnode.svg",
-            "link": "https://virtualtechschool.hashnode.dev/",
+            "link": "https://rb.gy/awe3n"
             "value": get_hashnode_stat()
         }
     ]
@@ -64,12 +64,9 @@ def courses():
 def course(code):
     try:
         course = fetch_course_data(code)
-        return render_template(
-            "course/course.html",
-            course=course,
-            code=code
-        )
+        template = "course/course.html"
     except ValueError:
-        return render_template(
-            "404/404.html"
-        )
+        template = "404/404.html"
+    
+    return render_template(template, course=course, code=code)
+
